@@ -5,4 +5,6 @@ RUN curl -fsSL https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor
 RUN ln -sf /usr/share/novnc/vnc.html /usr/share/novnc/index.html && mkdir -p /root/.config/openbox
 COPY autostart /root/.config/openbox/autostart
 COPY start.sh /start.sh
+RUN chmod +x /start.sh
 CMD ["/start.sh"]
+
