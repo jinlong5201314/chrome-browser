@@ -8,4 +8,6 @@ google-chrome \
     --disable-infobars \
     --window-size=1600,900 \
     --start-maximized \
+    --remote-debugging-port=9222 \
+    --remote-debugging-address=0.0.0.0 \
     "https://www.google.com" &
